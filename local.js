@@ -64,7 +64,7 @@
   if (countdown && data.dateISO) countdown.setAttribute("date", data.dateISO);
   const saveDate = $(".couple-section[data-id='2'] .btn-reminder");
   if (saveDate) {
-    const start = new Date(data.dateISO || "2026-12-12T08:00:00+07:00");
+    const start = new Date(data.dateISO || "2026-12-13T08:00:00+07:00");
     const end = new Date(start.getTime() + 3*60*60*1000);
     const fmt = d => {
       const parts = new Intl.DateTimeFormat("en-GB", {timeZone:"Asia/Jakarta", year:"numeric", month:"2-digit", day:"2-digit", hour:"2-digit", minute:"2-digit", second:"2-digit", hourCycle:"h23"}).formatToParts(d);

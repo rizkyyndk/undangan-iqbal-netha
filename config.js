@@ -6,14 +6,14 @@
 window.WEDDING = {
   pageTitle: "The Wedding of Iqbal & Netha",
   groom: {
-    name: "Mochammad Iqbal Fathoni, S.Ak",
-    parents: "Putra dari Bapak Muhamad Lutfi, S.T. (alm) & Ibu Tetty Hernawati, A.Md.Ak",
+    name: "Mochammad Iqbal Fathoni, S.Ak.",
+    parents: "Putra pertama dari Bapak Muhamad Lutfi, S.T. (alm) & Ibu Tetty Hernawati, A.Md.Ak.",
     instagram: "",
     photo: "assets/images/other/pengantin-cpp-1.jpg"
   },
   bride: {
-    name: "Netha Aura Nabila, S.Psi",
-    parents: "Putri dari Bapak H. Yayan Mulyana, S.H & Ibu Hj. Ria Sutriani, A.Md.Keb",
+    name: "Netha Aura Nabila, S.Psi.",
+    parents: "Putri ketiga dari Bapak H. Yayan Mulyana., S.H & Ibu Hj. Ria Sutriani, A.Md.Keb.",
     instagram: "",
     photo: "assets/images/other/pengantin-cpw-1.jpg"
   },
@@ -21,12 +21,12 @@ window.WEDDING = {
   // Tampilkan contoh ucapan agar area guestbook dapat dipreview dengan scroll.
   // Ubah menjadi false saat data ucapan klien sudah digunakan.
   previewDemoWishes: true,
-  dateISO: "2026-12-12T08:00:00+07:00",
+  dateISO: "2026-12-13T08:00:00+07:00",
   dateLabel: "Minggu, 13 Desember 2026",
   dateHeader: { weekday: "MINGGU", month: "DESEMBER", day: "13", year: "2026", time: "JAM 08:00" },
   akad: { date: "13 Desember 2026", weekday: "Minggu", time: "08:00 - 10:00" },
   resepsi: { date: "13 Desember 2026", weekday: "Minggu", time: "11:00 - 13:00" },
-  venue: "The Garden Hall",
+  venue: "Pondok Selera 2",
   address: "Pondok Selera 2 - Jl. Gatot Subroto No.66 KM 3, RT.1/RW.002, Uwung Jaya, Cibodas, Tangerang City, Banten 15132.",
   mapUrl: "https://maps.app.goo.gl/APwPxhq2xj7K23UT9?g_st=ac",
   storyIntro: "Dua jiwa namun satu pikiran, dua hati namun satu perasaan.",

@@ -846,7 +846,8 @@
 <div class="overlay-elements-gradient overlay-bottom"></div>
 </div>
 </section>
-<section class="stream-section moveable-section" data-id="10">
+<!-- LIVE STEREAMING -->
+<!-- <section class="stream-section moveable-section" data-id="10">
 <div class="container position-relative">
 <div class="stream-wrapper">
 <div class="row justify-content-center">
@@ -883,7 +884,7 @@
 </div>
 </div>
 </div>
-</section>
+</section> -->
 <section class="thank-section moveable-section" data-id="12">
 <div class="thank-wrapper">
 <div class="thank">
@@ -1027,5 +1028,31 @@
 
 
 
-<script>var player = null; var player2 = null; let isMusicAllowedToPlay = false;</script><script src="assets/vendor/js/bootstrap.bundle.min.js"></script><script src="assets/vendor/js/jquery-3.6.0.min.js"></script><script src="assets/vendor/js/splide.min.js"></script><script src="assets/vendor/js/gsap.min.js"></script><script src="assets/vendor/js/ScrollTrigger.min.js"></script><script src="assets/vendor/js/Flip.min.js"></script><script src="assets/vendor/js/lazysizes.min.js"></script><script src="assets/vendor/js/jquery.magnific-popup.min.js"></script><script src="assets/vendor/js/countdown.js"></script><script src="assets/template/tema77/js/app.js"></script><script src="assets/vendor/js/masonry.js"></script><script src="config.js"></script><script src="local.js"></script></body>
+<script>var player = null; var player2 = null; let isMusicAllowedToPlay = false;</script>
+<script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/js/jquery-3.6.0.min.js"></script>
+<script src="assets/vendor/js/splide.min.js"></script>
+<script src="assets/vendor/js/gsap.min.js"></script>\
+<script src="assets/vendor/js/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/js/Flip.min.js"></script>
+<script src="assets/vendor/js/lazysizes.min.js"></script>
+<script src="assets/vendor/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/vendor/js/countdown.js"></script>
+<script src="config.js"></script>
+<script>
+(function () {
+    const countdownEl = document.querySelector(
+        ".couple-section[data-id='2'] .countdown"
+    );
+
+    const targetDate = window.WEDDING && window.WEDDING.dateISO;
+
+    if (countdownEl && targetDate) {
+        countdownEl.setAttribute("date", targetDate);
+    }
+})();
+</script>
+<script src="assets/template/tema77/js/app.js"></script>
+<script src="assets/vendor/js/masonry.js"></script>
+<script src="local.js"></script>
 </html>

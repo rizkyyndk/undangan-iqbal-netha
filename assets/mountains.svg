@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700">
+<defs>
+ <linearGradient id="snow" x2="0" y2="1"><stop stop-color="#f8f8f1"/><stop offset=".58" stop-color="#e5e7df"/><stop offset="1" stop-color="#cbd1c6"/></linearGradient>
+ <linearGradient id="shade" x2="1" y2="1"><stop stop-color="#879283" stop-opacity=".8"/><stop offset="1" stop-color="#dce0d5" stop-opacity=".12"/></linearGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="2"/></filter>
+ <pattern id="dots" width="15" height="13" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.2" fill="#7b8879" opacity=".28"/><circle cx="11" cy="9" r="1" fill="#7b8879" opacity=".2"/></pattern>
+</defs>
+<path d="M0 480 L130 350 220 260 330 115 410 190 500 290 610 365 710 290 810 180 900 245 1010 330 1120 185 1200 110 1300 190 1400 270 1510 220 1600 320 V700 H0Z" fill="url(#snow)"/>
+<path d="M0 485 L130 350 220 260 330 115 410 190 500 290 610 365 710 290 810 180 900 245 1010 330 1120 185 1200 110 1300 190 1400 270 1510 220 1600 320" fill="none" stroke="#8c978a" stroke-width="7" opacity=".55"/>
+<path d="M240 270 L330 115 410 190 500 290 440 255 402 230 375 260 330 190 295 280Z" fill="#fff" opacity=".88"/>
+<path d="M1080 245 L1200 110 1300 190 1400 270 1325 235 1285 220 1245 255 1200 178 1160 260Z" fill="#fff" opacity=".88"/>
+<path d="M0 480 Q160 405 300 470 T600 460 Q760 370 930 450 T1250 435 T1600 450 V700 H0Z" fill="url(#shade)" opacity=".55"/>
+<g fill="none" stroke="#879384" stroke-width="5" opacity=".48">
+<path d="M120 365 Q230 310 315 350 Q380 275 455 325 M210 405 Q330 355 430 395 M335 190 Q355 235 390 250 M395 220 Q450 245 485 290"/>
+<path d="M730 320 Q820 255 900 300 Q965 235 1030 300 M805 370 Q920 315 1015 355 M1150 240 Q1200 190 1240 205 M1250 270 Q1330 230 1390 270"/>
+<path d="M0 520 Q220 470 440 530 T870 520 T1300 510 T1600 500"/>
+<path d="M0 575 Q240 530 470 580 T920 570 T1370 560 T1600 550"/>
+</g>
+<path d="M0 555 Q150 490 300 550 T600 555 Q790 470 970 550 T1300 535 T1600 540 V700 H0Z" fill="#e7e9e1"/>
+<path d="M0 620 Q220 565 430 620 T860 620 T1280 610 T1600 610" fill="none" stroke="#a7b0a3" stroke-width="5" opacity=".45"/>
+<path d="M0 660 Q250 615 500 660 T1000 655 T1600 650" fill="none" stroke="#a7b0a3" stroke-width="4" opacity=".35"/>
+<path d="M0 0 H1600 V700 H0Z" fill="url(#dots)" opacity=".7"/>
+<path d="M0 675 Q280 630 560 675 T1120 670 T1600 665 V700 H0Z" fill="#f8f8f2" opacity=".85" filter="url(#soft)"/>
+</svg>

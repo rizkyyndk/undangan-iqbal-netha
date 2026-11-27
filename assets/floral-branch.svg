@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520">
+<defs>
+ <linearGradient id="leaf" x2="1" y2="1"><stop stop-color="#527766"/><stop offset="1" stop-color="#173e35"/></linearGradient>
+ <radialGradient id="petal"><stop stop-color="#fff9f1"/><stop offset=".72" stop-color="#e8c9c8"/><stop offset="1" stop-color="#bd9996"/></radialGradient>
+ <radialGradient id="cream"><stop stop-color="#fff6df"/><stop offset="1" stop-color="#d9b977"/></radialGradient>
+</defs>
+<g fill="none" stroke="#4c6552" stroke-width="6" stroke-linecap="round">
+<path d="M80 480 Q180 350 250 220 T420 35"/>
+<path d="M185 365 Q115 290 65 255 M260 230 Q350 245 430 210 M320 145 Q245 100 190 80 M120 430 Q70 405 30 360"/>
+</g>
+<g fill="url(#leaf)" stroke="#274d40" stroke-width="2">
+<path d="M80 255 Q5 180 45 115 Q130 130 140 215 Q115 248 80 255Z"/>
+<path d="M120 285 Q145 200 225 190 Q238 270 160 310Z"/>
+<path d="M245 220 Q210 125 265 70 Q340 120 300 205Z"/>
+<path d="M300 190 Q350 105 425 115 Q425 205 340 220Z"/>
+<path d="M190 365 Q115 325 125 255 Q215 260 235 340Z"/>
+<path d="M335 130 Q335 45 405 18 Q450 90 375 150Z"/>
+<path d="M75 425 Q0 390 15 325 Q100 335 115 405Z"/>
+</g>
+<g fill="none" stroke="#8ca08b" stroke-width="2" opacity=".8">
+<path d="M55 135 Q80 180 80 255 M135 270 Q170 245 225 190 M270 85 Q280 145 300 205 M420 130 Q380 175 340 220"/>
+</g>
+<g transform="translate(90 160)">
+ <g fill="url(#petal)" stroke="#b99593" stroke-width="2">
+ <ellipse cx="0" cy="-31" rx="23" ry="35"/><ellipse cx="29" cy="-8" rx="23" ry="35" transform="rotate(70 29 -8)"/><ellipse cx="18" cy="26" rx="23" ry="35" transform="rotate(140 18 26)"/><ellipse cx="-20" cy="24" rx="23" ry="35" transform="rotate(215 -20 24)"/><ellipse cx="-31" cy="-10" rx="23" ry="35" transform="rotate(285 -31 -10)"/>
+ </g><circle r="13" fill="url(#cream)"/><circle r="5" fill="#9e7a47"/>
+</g>
+<g transform="translate(365 215) scale(.78)">
+ <g fill="url(#petal)" stroke="#b99593" stroke-width="2">
+ <ellipse cx="0" cy="-31" rx="23" ry="35"/><ellipse cx="29" cy="-8" rx="23" ry="35" transform="rotate(70 29 -8)"/><ellipse cx="18" cy="26" rx="23" ry="35" transform="rotate(140 18 26)"/><ellipse cx="-20" cy="24" rx="23" ry="35" transform="rotate(215 -20 24)"/><ellipse cx="-31" cy="-10" rx="23" ry="35" transform="rotate(285 -31 -10)"/>
+ </g><circle r="13" fill="url(#cream)"/><circle r="5" fill="#9e7a47"/>
+</g>
+<g transform="translate(245 75) scale(.52)">
+ <g fill="url(#petal)" stroke="#b99593" stroke-width="2">
+ <ellipse cx="0" cy="-31" rx="23" ry="35"/><ellipse cx="29" cy="-8" rx="23" ry="35" transform="rotate(70 29 -8)"/><ellipse cx="18" cy="26" rx="23" ry="35" transform="rotate(140 18 26)"/><ellipse cx="-20" cy="24" rx="23" ry="35" transform="rotate(215 -20 24)"/><ellipse cx="-31" cy="-10" rx="23" ry="35" transform="rotate(285 -31 -10)"/>
+ </g><circle r="13" fill="url(#cream)"/>
+</g>
+<g fill="#d9bd7c"><circle cx="430" cy="280" r="13"/><circle cx="458" cy="300" r="10"/><circle cx="405" cy="315" r="12"/><circle cx="35" cy="290" r="10"/></g>
+</svg>

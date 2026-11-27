@@ -1,0 +1,25 @@
+YAMA RECONSTRUCTION V6 — PERBAIKAN KHUSUS GUESTBOOK SCROLL
+
+Yang diubah hanya:
+1. config.js
+   - Menambahkan previewDemoWishes: true agar contoh ucapan dapat diaktifkan/nonaktifkan.
+2. local.js
+   - Menambah contoh ucapan demo dari 3 menjadi 10 agar konten melebihi batas area scroll Theme 77.
+   - Mempertahankan pesan yang dikirim pengguna di localStorage.
+   - Pada mode preview, contoh ucapan tetap tampil bersama ucapan baru.
+   - Setelah mengirim ucapan, daftar kembali ke posisi paling atas agar pesan terbaru terlihat.
+
+Yang TIDAK diubah:
+- index.html dan struktur section
+- CSS asli Theme 77, termasuk .wishes max-height: 32rem dan overflow: auto
+- animasi, bunga, ilustrasi, tipografi, warna, galeri, RSVP, gift, streaming, dan musik
+
+Untuk menghilangkan data contoh saat memakai data klien:
+- Buka config.js
+- Ubah previewDemoWishes: true menjadi previewDemoWishes: false
+
+Cara menjalankan:
+- Extract ZIP
+- Masuk folder yama-reconstruction-v6
+- Jalankan: php -S localhost:8080
+- Buka: http://localhost:8080

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#707b6c"/><stop offset=".52" stop-color="#aab09f"/><stop offset="1" stop-color="#d4d6c9"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#f5f1df" stop-opacity=".9"/><stop offset=".52" stop-color="#e8e8d9" stop-opacity=".48"/><stop offset="1" stop-color="#e8e8d9" stop-opacity="0"/></radialGradient>
+    <linearGradient id="snow" x2="0" y2="1"><stop stop-color="#f4f1e8"/><stop offset="1" stop-color="#e4e4d9"/></linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .11"/></feComponentTransfer></filter>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="3" cy="4" r="1.5" fill="#596654" opacity=".34"/><circle cx="11" cy="12" r="1" fill="#596654" opacity=".25"/></pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <ellipse cx="960" cy="450" rx="530" ry="500" fill="url(#glow)"/>
+  <path d="M0 190 Q190 145 380 190 T760 175 T1160 190 T1540 160 T1920 185 V500 H0Z" fill="#8c9684" opacity=".35"/>
+  <path d="M0 330 Q210 250 390 322 T760 310 T1120 300 T1510 315 T1920 270 V650 H0Z" fill="url(#dots)" opacity=".8"/>
+  <!-- distant ridges -->
+  <g fill="none" stroke="#596654" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".42">
+    <path d="M-30 560 L145 405 235 450 360 355 475 470 610 390 760 500 910 405 1055 490 1195 370 1350 470 1500 360 1655 475 1800 380 1960 470"/>
+    <path d="M-20 590 Q170 525 330 570 T670 550 T1010 570 T1370 540 T1710 550 T1950 520"/>
+    <path d="M40 575 L145 475 215 520 300 425 390 520 M1120 520 L1215 430 1300 510 1410 405 1515 500 1620 420 1715 505 1825 430"/>
+  </g>
+  <!-- rice terraces and village -->
+  <g fill="none" stroke="#596654" stroke-width="4" opacity=".34">
+    <path d="M0 610 Q260 550 510 625 T1010 620 T1510 600 T1920 590"/>
+    <path d="M0 655 Q260 590 520 670 T1040 665 T1540 640 T1920 635"/>
+    <path d="M0 710 Q260 645 520 725 T1040 715 T1540 690 T1920 690"/>
+    <path d="M60 750 Q300 685 570 765 T1100 760 T1610 735 T1900 730"/>
+    <path d="M120 790 Q390 720 650 800 T1190 795 T1700 770"/>
+  </g>
+  <g stroke="#596654" stroke-width="4" fill="#8d9783" opacity=".52" stroke-linejoin="round">
+    <path d="M1240 470 l90 -70 92 70 v82 h-182z"/><path d="M1224 474 l106 -88 110 88" fill="none"/>
+    <path d="M1390 500 l72 -56 76 56 v70 h-148z"/><path d="M1378 501 l84 -68 88 68" fill="none"/>
+    <path d="M1530 460 l98 -75 103 75 v100 h-201z"/><path d="M1516 463 l112 -91 118 91" fill="none"/>
+    <path d="M1680 500 l72 -54 76 54 v70 h-148z"/><path d="M1668 500 l84 -66 88 66" fill="none"/>
+    <path d="M1310 520 v-32 h28 v32 M1460 548 v-28 h25 v28 M1600 548 v-36 h30 v36 M1735 548 v-27 h24 v27" fill="#596654"/>
+  </g>
+  <!-- small trees -->
+  <g fill="#566653" opacity=".42"><circle cx="1150" cy="560" r="38"/><circle cx="1185" cy="545" r="27"/><circle cx="1810" cy="570" r="45"/><circle cx="1850" cy="548" r="30"/><circle cx="1080" cy="590" r="24"/></g>
+  <g stroke="#596654" stroke-width="4" opacity=".36" fill="none"><path d="M1150 570 v80 M1810 575 v90 M1080 590 v55 M1185 560 v70"/></g>
+  <!-- path through the landscape -->
+  <path d="M730 1080 Q820 900 915 800 Q1000 700 950 610 Q900 535 960 500 Q1030 470 1090 535 Q1160 620 1100 720 Q1030 850 1230 1080Z" fill="#e1e0d3" opacity=".34"/>
+  <path d="M830 1080 Q900 910 990 810 Q1060 730 1030 650" fill="none" stroke="#f0eee2" stroke-width="10" opacity=".25"/>
+  <!-- foreground paper-like hills -->
+  <path d="M0 820 Q115 760 220 815 Q310 720 430 790 Q535 700 650 770 Q760 730 850 820 Q940 760 1030 820 Q1140 760 1240 820 Q1360 740 1460 815 Q1580 735 1685 815 Q1810 740 1920 790 V1080 H0Z" fill="url(#snow)"/>
+  <path d="M0 865 Q150 810 250 870 Q370 800 480 865 Q610 800 720 885 Q820 830 930 900 Q1050 825 1160 885 Q1290 820 1400 880 Q1540 815 1650 880 Q1790 820 1920 865" fill="none" stroke="#c9cbbf" stroke-width="8" opacity=".65"/>
+  <path d="M0 940 Q170 880 320 950 Q450 890 580 960 Q740 900 880 980 Q1030 900 1170 970 Q1320 900 1470 965 Q1630 890 1770 950 Q1850 920 1920 930" fill="none" stroke="#d2d3c8" stroke-width="5" opacity=".7"/>
+  <path d="M0 1010 Q200 955 370 1020 T740 1015 T1120 1020 T1500 1005 T1920 1015 V1080 H0Z" fill="#f7f4eb" opacity=".9"/>
+  <rect width="1920" height="1080" filter="url(#grain)" opacity=".32"/>
+</svg>

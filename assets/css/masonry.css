@@ -1,109 +1,168 @@
+
+/* =========================================
+   GALLERY SECTION
+========================================= */
+
 .gallery-section {
-  position: relative;
-  padding: 3rem 0;
+    position: relative;
+    padding: 3rem 0;
 }
 
 .gallery-section .ornament-1 {
-  position: absolute;
-  left: 10%;
-  bottom: 3rem;
-  height: 480px;
+    position: absolute;
+    left: 10%;
+    bottom: 3rem;
+    height: 480px;
 }
 
 @media (max-width: 991px) {
-  .gallery-section .ornament-1 {
-    height: 280px;
-  }
+    .gallery-section .ornament-1 {
+        height: 280px;
+    }
 }
 
 @media (max-width: 767px) {
-  .gallery-section .ornament-1 {
-    height: auto;
-    left: 0;
-    width: 100%;
-  }
+    .gallery-section .ornament-1 {
+        height: auto;
+        left: 0;
+        width: 100%;
+    }
 }
+
+
+/* =========================================
+   DESKTOP GALLERY GRID
+   5 COLUMNS
+========================================= */
 
 .gallery-section #zoom-gallery-default {
-  width: 100%;
-  position: relative;
-  display: grid;
-  gap: 5px;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-auto-rows: 26.6667vw;
+    gap: 5px;
 }
+
+.gallery-section #zoom-gallery-default > a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    aspect-ratio: unset;
+    overflow: hidden;
+}
+
+
+/* Foto melebar 2 kolom pada desktop */
+
+.gallery-section #zoom-gallery-default > a:nth-child(4),
+.gallery-section #zoom-gallery-default > a:nth-child(5),
+.gallery-section #zoom-gallery-default > a:nth-child(12),
+.gallery-section #zoom-gallery-default > a:nth-child(13),
+.gallery-section #zoom-gallery-default > a:nth-child(20),
+.gallery-section #zoom-gallery-default > a:nth-child(21),
+.gallery-section #zoom-gallery-default > a:nth-child(28),
+.gallery-section #zoom-gallery-default > a:nth-child(29) {
+    grid-column: span 2;
+}
+
+
+/* =========================================
+   MOBILE GALLERY GRID
+   4 COLUMNS
+========================================= */
 
 @media (max-width: 767px) {
-  .gallery-section #zoom-gallery-default {
-    padding: 0;
-  }
+
+    .gallery-section #zoom-gallery-default {
+        padding: 0;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-auto-rows: 33.3333vw;
+    }
+
+    /* Reset pola desktop */
+
+    .gallery-section #zoom-gallery-default > a:nth-child(4),
+    .gallery-section #zoom-gallery-default > a:nth-child(5),
+    .gallery-section #zoom-gallery-default > a:nth-child(12),
+    .gallery-section #zoom-gallery-default > a:nth-child(13),
+    .gallery-section #zoom-gallery-default > a:nth-child(20),
+    .gallery-section #zoom-gallery-default > a:nth-child(21),
+    .gallery-section #zoom-gallery-default > a:nth-child(28),
+    .gallery-section #zoom-gallery-default > a:nth-child(29) {
+        grid-column: auto;
+    }
+
+    /* Pola khusus mobile */
+
+    .gallery-section #zoom-gallery-default > a:nth-child(3),
+    .gallery-section #zoom-gallery-default > a:nth-child(4),
+    .gallery-section #zoom-gallery-default > a:nth-child(9),
+    .gallery-section #zoom-gallery-default > a:nth-child(10),
+    .gallery-section #zoom-gallery-default > a:nth-child(15),
+    .gallery-section #zoom-gallery-default > a:nth-child(16),
+    .gallery-section #zoom-gallery-default > a:nth-child(21),
+    .gallery-section #zoom-gallery-default > a:nth-child(22),
+    .gallery-section #zoom-gallery-default > a:nth-child(27),
+    .gallery-section #zoom-gallery-default > a:nth-child(28) {
+        grid-column: span 2;
+    }
 }
 
-.gallery-section #zoom-gallery-default a {
-  position: relative;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 3/4;
-}
 
-.gallery-section #zoom-gallery-default a.grid-lg-default {
-  grid-column: span 2;
-  height: 280px;
-  aspect-ratio: unset;
-}
-
-@media (max-width: 991px) {
-  .gallery-section #zoom-gallery-default a.grid-lg-default {
-    height: 170px;
-  }
-}
-
-@media (max-width: 767px) {
-  .gallery-section #zoom-gallery-default a.grid-lg-default {
-    height: 50px;
-  }
-}
+/* =========================================
+   IMAGE OVERLAY
+========================================= */
 
 .gallery-section #zoom-gallery-default a::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: transparent;
-  z-index: 2;
-  transition: all 0.5s ease-in-out;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
 }
 
 .gallery-section #zoom-gallery-default a::after {
-  position: absolute;
-  font-family: "Font Awesome 6 Free";
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  content: "+";
-  transition: all 0.4s ease-in-out;
-  color: #f4f4f4;
-  padding: 2px 8px;
-  font-size: 20px;
-  border-radius: 1000px;
-  font-weight: 700;
-  border: solid 2px #f4f4f4;
-  opacity: 0;
-  z-index: 3;
+    position: absolute;
+    font-family: "Font Awesome 6 Free";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "+";
+    transition: all 0.4s ease-in-out;
+    color: #f4f4f4;
+    padding: 2px 8px;
+    font-size: 20px;
+    border-radius: 1000px;
+    font-weight: 700;
+    border: solid 2px #f4f4f4;
+    opacity: 0;
+    z-index: 3;
 }
 
 .gallery-section #zoom-gallery-default a:hover::before {
-  background-color: rgba(8, 8, 8, 0.3647058824);
+    background-color: rgba(8, 8, 8, 0.3647058824);
 }
 
 .gallery-section #zoom-gallery-default a:hover::after {
-  opacity: 1;
+    opacity: 1;
 }
 
+
+/* =========================================
+   IMAGE FIT
+========================================= */
+
 .gallery-section #zoom-gallery-default .photo {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
 }

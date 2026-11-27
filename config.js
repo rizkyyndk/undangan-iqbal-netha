@@ -8,14 +8,14 @@ window.WEDDING = {
   groom: {
     name: "Mochammad Iqbal Fathoni, S.Ak.",
     parents: "Putra pertama dari Bapak Muhamad Lutfi, S.T. (alm) & Ibu Tetty Hernawati, A.Md.Ak.",
-    instagram: "",
-    photo: "assets/images/other/pengantin-cpp-1.jpg"
+    instagram: "https://www.instagram.com/iqbal.fthni/",
+    photo: "assets/images/other/profile iqbal.jpeg"
   },
   bride: {
     name: "Netha Aura Nabila, S.Psi.",
     parents: "Putri ketiga dari Bapak H. Yayan Mulyana., S.H & Ibu Hj. Ria Sutriani, A.Md.Keb.",
-    instagram: "",
-    photo: "assets/images/other/pengantin-cpw-1.jpg"
+    instagram: "https://www.instagram.com/nethaauuu",
+    photo: "assets/images/other/profile netha.jpeg"
   },
   guestDefault: "Nama Tamu",
   // Tampilkan contoh ucapan agar area guestbook dapat dipreview dengan scroll.
@@ -36,7 +36,7 @@ window.WEDDING = {
     { date: "2024", title: "Memantapkan hati", text: "Dengan doa dan restu keluarga, kami memutuskan melangkah ke jenjang yang lebih serius.", photo: "assets/images/other/story-3.jpg" },
     { date: "2026", title: "Hari yang dinanti", text: "InsyaAllah, kami akan memulai babak baru dalam kehidupan bersama.", photo: "assets/images/other/story-4.jpg" }
   ],
-  storyBackground: "assets/images/other/gallery-4.jpg",
+  storyBackground: "assets/images/other/storyBackground.jpeg",
   gallery: [
     "assets/images/other/gallery-1.jpg", "assets/images/other/gallery-2.jpg", "assets/images/other/gallery-3.jpg", "assets/images/other/gallery-4.jpg",
     "assets/images/other/gallery-5.jpg", "assets/images/other/gallery-6.jpg", "assets/images/other/gallery-7.jpg", "assets/images/other/gallery-8.jpg",
